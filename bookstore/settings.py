@@ -72,7 +72,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'bookstore.wsgi.application'
 
-
+#AUTH_PROFILE_MODULE = 'registration.RegistrationProfile'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
@@ -104,15 +104,15 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 # Registration
-ACCOUNT_ACTIVATION_DAY =7
+ACCOUNT_ACTIVATION_DAYS =7
 REGISTRATION_AUTO_LOGIN = True
 LOGIN_REDIRECT_URL = '/store/'
 
 # Email settings
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
 EMAIL_HOST = "smtp.gmail.com"
-EMAIL_HOST_USER = "dannyd0292@gmail.com"
+EMAIL_HOST_USER = "dannyfdiaz92@gmail.com"
 EMAIL_HOST_PASSWORD = "spartan_92"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = "ddiaz@stevens.edu"
+DEFAULT_FROM_EMAIL = "dannyd_92@yahoo.com"
